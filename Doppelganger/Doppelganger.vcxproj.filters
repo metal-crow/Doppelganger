@@ -21,9 +21,15 @@
     <ClCompile Include="FaceDetection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="WebScrape.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FaceDetection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WebScrape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

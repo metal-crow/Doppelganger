@@ -42,3 +42,13 @@ void setupFaceDetector(void){
 	face_compare = createEigenFaceRecognizer();
 	face_compare->train(images, labels);
 }
+
+void test(void){
+	Mat face = imread("testface.jpg", CV_LOAD_IMAGE_GRAYSCALE);
+	resize(face, face, img_size);
+	int predictedLabel = -1;
+	double confidence = 0.0;
+	face_compare->predict(face, predictedLabel, confidence);
+
+	printf("Result:%d %f\n", predictedLabel, confidence);
+}
